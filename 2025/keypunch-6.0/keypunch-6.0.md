@@ -10,7 +10,7 @@ Up to now, Keypunch's measurements of typing performance have been rather primit
 
 These calculations are easy to understand and interpret, but also omissive and potentially misleading. The one for speed in particular has caused some pretty [ridiculous result screens](https://github.com/bragefuglseth/keypunch/issues/85) because of its uncritical counting. Needless to say, this is not ideal.
 
-I've gone a little back and forth with myself on how to move forward, and ended up overhauling both of the calculations: For speed, Keypunch now counts how many *correct* characters there are at the end of the test, while the correctness rate has been replaced with real accuracy, based on *all* operations that have changed the typed text rather than just the final result. The new calculations come with their own trade-offs, but in general I believe this is a change for the better.
+I've gone a little back and forth with myself on how to move forward, and ended up overhauling both of the calculations: For speed, Keypunch now counts how many *correct* characters there are at the end of the test, while the correctness rate has been replaced with real accuracy, based on *all* operations that have changed the typed text rather than just the final result. The new calculations come with their own trade-offs, but in general, I believe this is a change for the better.
 
 ![An overview of the new result calculations](./results-calculation.svg)
 
@@ -63,11 +63,11 @@ This Keypunch release is based on [GNOME 48](https://release.gnome.org/48), whic
 - The latest Adwaita styling
 - Better adherence to the system font settings
 - Improved performance
-- An "Other Apps" section in the about window
+- An "Other Apps" section in the About dialog
 
 While not directly part of the runtime, Keypunch will also benefit a lot from the new [Adwaita Fonts](https://blogs.gnome.org/monster/introducing-adwaita-fonts/). It's exciting to build on such a rapidly improving platform.
 
-![The new "Other Apps" section in the about window](./about-other-apps.jpeg)
+![The new "Other Apps" section in the About dialog](./about-other-apps.jpeg)
 
 ## Additional Artwork
 
@@ -79,6 +79,6 @@ Keypunch is now part of [GNOME Circle](https://circle.gnome.org)! I'm happy and 
 
 ## Conclusion
 
-That's it for this update. Initially I was planning on just doing a platform/translation bump now and holding off the headline features for an even bigger update later on, but I decided that it's better to ship what I have at the moment and let the rest wait for later. There's still more on the roadmap, but I don't want to spoil anything!
+That's it for this update. Initially, I was planning on just doing a platform/translation bump now and holding off the headline features for an even bigger update later on, but I decided that it's better to ship what I have at the moment and let the rest wait for later. There's still more on the roadmap, but I don't want to spoil anything!
 
 If you have questions or feedback, feel free to [mention me](https://fosstodon.org/@bragefuglseth) on Mastodon or [message me](https://matrix.to/#/@bragefuglseth:gnome.org) on Matrix.
