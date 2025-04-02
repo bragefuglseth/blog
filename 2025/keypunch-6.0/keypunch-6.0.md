@@ -12,13 +12,15 @@ These calculations are easy to understand and interpret, but also omissive and p
 
 I've gone a little back and forth with myself on how to move forward, and ended up overhauling both of the calculations: For speed, Keypunch now counts how many *correct* characters there are at the end of the test, while the correctness rate has been replaced with real accuracy, based on *all* operations that have changed the typed text rather than just the final result. The new calculations come with their own trade-offs, but in general I believe this is a change for the better.
 
+![An overview of the new result calculations](./results-calculation.svg)
+
 ## Frustration Relief
 
 Learning to type is awfully hard. At least it was for me; sometimes it felt like I wasn't even in control of my own fingers. This made me furious, and my number-one coping mechanism was to go berserk with my keyboard and mash random keys in frustration. As one might guess, this did not help me progress, and I probably should just have gone for a walk or something instead.
 
 To safeguard the poor souls who come after me, I'm introducing something I call *frustration relief*. The concept is simple: If Keypunch detects that you're randomly mashing your keyboard, it will cancel the test and provide a helpful piece of life advice. I can't understate how much I wish I had something like this a couple of years ago.
 
-![Frustration Relief in action](./frustration-relief.jpeg)
+![Frustration relief in action](./frustration-relief.jpeg)
 
 ## Input Improvements
 
@@ -56,7 +58,7 @@ Thanks to everyone who is helping make Keypunch speak their language!
 
 ## Platform Improvements
 
-This Keypunch release is based on GNOME 48, which brings a bunch of external platform goodness to the app:
+This Keypunch release is based on [GNOME 48](https://release.gnome.org/48), which brings a bunch of external platform goodness to the app:
 
 - The latest Adwaita styling
 - Better adherence to the system font settings
