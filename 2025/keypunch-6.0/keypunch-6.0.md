@@ -26,7 +26,7 @@ To safeguard the poor souls who come after me, I'm introducing something I call 
 
 Being a text-centric app with multi-language support, Keypunch inevitably has to work with the many intricacies of digital text input. This includes the fact that the Unicode standard contains more than a dozen different space characters. For a while, Keypunch has supported entering regular spaces in the place of [non-breaking](https://en.wikipedia.org/wiki/Non-breaking_space) ones, and now the same is possible the other way around too. Notably, this is a significant improvement for users of the francophone [BÉPO](https://bepo.fr/) keyboard layout.
 
-## Languages
+## New Languages
 
 Keypunch's international community has been hard at work lately, and I'm happy to report a solid upturn in language support. For text generation, these languages have been added:
 
@@ -56,7 +56,7 @@ Thanks to everyone who is helping make Keypunch speak their language!
 
 ![A preview of the extended language support](text-languages.jpeg)
 
-## Platform Improvements
+## Platform Progression
 
 This Keypunch release is based on [GNOME 48](https://release.gnome.org/48), which brings a bunch of external platform goodness to the app:
 
@@ -73,7 +73,7 @@ While not directly part of the runtime, Keypunch will also benefit a lot from th
 
 Apparently, some people are keeping Keypunch [in their game libraries](https://github.com/bragefuglseth/keypunch/issues/97). If you're one of them, I've made a couple of [assets](https://github.com/bragefuglseth/keypunch/tree/main/data/artwork) to make Keypunch integrate better visually with the rest of your collection. Enjoy!
 
-## Circle
+## Circle Inclusion
 
 Keypunch is now part of [GNOME Circle](https://circle.gnome.org)! I'm happy and grateful to have another app of mine accepted into the program. For full transparency, I'm part of the Circle Committee myself, but Keypunch has been independently reviewed by two other committee members, namely [Tobias](https://tobiasbernard.com) and [Gregor](https://codeberg.org/gregorni). Thanks!
 
