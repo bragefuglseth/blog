@@ -10,17 +10,21 @@ Up to now, Keypunch's measurements of typing performance have been rather primit
 
 These calculations are easy to understand and interpret, but also omissive and potentially misleading. The one for speed in particular has caused some pretty [ridiculous result screens](https://github.com/bragefuglseth/keypunch/issues/85) because of its uncritical counting. Needless to say, this is not ideal.
 
-I've gone a little back and forth with myself on how to move forward, and ended up overhauling both of the calculations: For speed, Keypunch now counts how many *correct* characters there are at the end of the test, while the correctness rate has been replaced with real accuracy, based on *all* operations that have changed the typed text rather than just the final result. The new calculations come with their own trade-offs, but in general, I believe this is a change for the better.
+I've gone a little back and forth with myself on how to move forward, and ended up overhauling both of the calculations: For speed, Keypunch now counts how many *correct* characters there are at the end of the test, while the correctness rate has been replaced with real accuracy, based on *all* operations that have changed the typed text rather than just the final result.
 
 ![An overview of the new result calculations](./results-calculation.svg)
+
+The new calculations come with their own trade-offs, but in general, I believe this is a change for the better.
 
 ## Frustration Relief
 
 Learning to type is awfully hard. At least it was for me; sometimes it felt like I wasn't even in control of my own fingers. This made me furious, and my number-one coping mechanism was to go berserk with my keyboard and mash random keys in frustration. As one might guess, this did not help me progress, and I probably should just have gone for a walk or something instead.
 
-To safeguard the poor souls who come after me, I'm introducing something I call *frustration relief*. The concept is simple: If Keypunch detects that you're randomly mashing your keyboard, it will cancel the test and provide a helpful piece of life advice. I can't understate how much I wish I had something like this a couple of years ago.
+To safeguard the poor souls who come after me, I'm introducing something I call *frustration relief*. The concept is simple: If Keypunch detects that you're randomly mashing your keyboard, it will cancel the test and provide a helpful piece of life advice. 
 
 ![Frustration relief in action](./frustration-relief.jpeg)
+
+I can't understate how much I wish I had something like this a couple of years ago.
 
 ## Input Improvements
 
@@ -40,6 +44,8 @@ Keypunch's international community has been hard at work lately, and I'm happy t
 
 This brings the total language count up to 38! Does Keypunch support your language yet? If not, feel free to open a [language request](https://github.com/bragefuglseth/keypunch/issues/new?template=language_request.yaml).
 
+![A preview of the extended language support](text-languages.jpeg)
+
 On the interface translation side, Keypunch has enrolled in GNOME's common translation system, [Damned Lies](https://l10n.gnome.org), allowing it to benefit from the coordinated and high-quality work of GNOME's translation teams. Since the last update, Keypunch has been translated into these languages:
 
 - Catalan
@@ -54,8 +60,6 @@ On the interface translation side, Keypunch has enrolled in GNOME's common trans
 
 Thanks to everyone who is helping make Keypunch speak their language!
 
-![A preview of the extended language support](text-languages.jpeg)
-
 ## Platform Progression
 
 This Keypunch release is based on [GNOME 48](https://release.gnome.org/48), which brings a bunch of external platform goodness to the app:
@@ -65,9 +69,9 @@ This Keypunch release is based on [GNOME 48](https://release.gnome.org/48), whic
 - Improved performance
 - An "Other Apps" section in the About dialog
 
-While not directly part of the runtime, Keypunch will also benefit a lot from the new [Adwaita Fonts](https://blogs.gnome.org/monster/introducing-adwaita-fonts/). It's exciting to build on such a rapidly improving platform.
-
 ![The new "Other Apps" section in the About dialog](./about-other-apps.jpeg)
+
+While not directly part of the runtime, Keypunch will also benefit a lot from the new [Adwaita Fonts](https://blogs.gnome.org/monster/introducing-adwaita-fonts/). It's exciting to build on such a rapidly improving platform.
 
 ## Additional Artwork
 
@@ -77,7 +81,7 @@ Apparently, some people are keeping Keypunch [in their game libraries](https://g
 
 Keypunch is now part of [GNOME Circle](https://circle.gnome.org)! I'm happy and grateful to have another app of mine accepted into the program. For full transparency, I'm part of the Circle Committee myself, but Keypunch has been independently reviewed by two other committee members, namely [Tobias](https://tobiasbernard.com) and [Gregor](https://codeberg.org/gregorni). Thanks!
 
-## Conclusion
+## Final Thoughts
 
 That's it for this update. Initially, I was planning on just doing a platform/translation bump now and holding off the headline features for an even bigger update later on, but I decided that it's better to ship what I have at the moment and let the rest wait for later. There's still more on the roadmap, but I don't want to spoil anything!
 
