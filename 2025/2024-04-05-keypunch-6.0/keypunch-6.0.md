@@ -86,3 +86,5 @@ Keypunch is now part of [GNOME Circle](https://circle.gnome.org)! I'm happy and 
 That's it for this update. Initially, I was planning on just doing a platform/translation bump now and holding off the headline features for an even bigger update later on, but I decided that it's better to ship what I have at the moment and let the rest wait for later. There's still more on the roadmap, but I don't want to spoil anything!
 
 If you have questions or feedback, feel free to [mention me](https://fosstodon.org/@bragefuglseth) on Mastodon or [message me](https://matrix.to/#/@bragefuglseth:gnome.org) on Matrix.
+
+Oh, and if you'd like to support my work, feel free to make a [donation](https://ko-fi.com/bragefuglseth)! I'd really appreciate that.
