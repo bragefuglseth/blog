@@ -8,13 +8,13 @@ Spring is in the air, the snow is finally melting away here in the cold north, a
 
 Up to now, Keypunch's measurements of typing performance have been rather primitive. For speed, it has just compared the total number of typed characters, both correct and incorrect, to the test duration. Likewise, the "correctness" rate is nothing more than the share of correctly typed characters at the time of calculation. If you make a mistake and then correct it, it's not taken into account at all.
 
-These calculations are easy to understand and interpret, but also omissive and potentially misleading. The one for speed in particular has caused some pretty [ridiculous result screens](https://github.com/bragefuglseth/keypunch/issues/85) because of its uncritical counting. Needless to say, this is not ideal.
+These calculations are easy to understand and interpret, but also flawed and potentially misleading. The one for speed in particular has caused some pretty [ridiculous result screens](https://github.com/bragefuglseth/keypunch/issues/85) because of its uncritical counting. Needless to say, this is not ideal.
 
 I've gone a little back and forth with myself on how to move forward, and ended up overhauling both of the calculations: For speed, Keypunch now counts how many *correct* characters there are at the end of the test, while the correctness rate has been replaced with real accuracy, based on *all* operations that have changed the typed text rather than just the final result.
 
 ![An overview of the new result calculations](./results-calculation.svg)
 
-The new calculations come with their own trade-offs, but in general, I believe this is a change for the better.
+The new calculations come with their own trade-offs, such as the incentive to correct mistakes being slightly reduced. In general, however, I view them as a change for the better.
 
 ## Frustration Relief
 
