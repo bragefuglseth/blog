@@ -87,4 +87,4 @@ That's it for this update. Initially, I was planning on just doing a platform/tr
 
 If you have questions or feedback, feel free to [mention me](https://fosstodon.org/@bragefuglseth) on Mastodon or [message me](https://matrix.to/#/@bragefuglseth:gnome.org) on Matrix.
 
-Oh, and if you'd like to support my work, feel free to make a [donation](https://ko-fi.com/bragefuglseth)! I'd really appreciate that.
+Oh, and if you'd like to support my work, feel free to make a [donation](https://bragefuglseth.dev/donate.html)! I'd really appreciate that.
